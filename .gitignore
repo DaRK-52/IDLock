@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 测试
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# 环境变量
+.env
+.env.local
+
+# 区块链
+build/
+.brownie/
+reports/
+
+# 密钥和敏感数据
+*.key
+*.pem
+private_keys/
+secrets/
+
+# 日志
+logs/
+*.log
+
+# 数据
+data/
+*.db
+*.sqlite
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
