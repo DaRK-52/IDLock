@@ -14,6 +14,8 @@ docker pull sbellem/charm-crypto:4893024-python3.7-slim-buster
 
 docker run -it -v ./:/root/test --rm sbellem/charm-crypto:4893024-python3.7-slim-buster /bin/bash
 
+pip3 install flask requests
+
 cd /root/test
 ```
 
