@@ -126,6 +126,7 @@ def test_user_auth_success():
         assert verify_result["valid"] is True, f"认证应成功: {verify_result}"
 
         # 将注册交易打包入块，验证链路可用
+        # 理论上这一步应该在验证者验证前完成，让验证者有能力检查用户的DID是否已上链，但为了测试流程的简洁性，我们放在验证后进行
         mine_resp = requests.post(f"{svc['blockchain_url']}/block/mine", timeout=3)
         assert mine_resp.status_code == 201, f"打包区块失败: {mine_resp.text}"
 
